@@ -16,7 +16,7 @@ public class Main {
         Libros libros=new Libros();
         Scanner sc=new Scanner(System.in);
         System.out.println("Digite el nombre del libro: ");
-        libros.setNombre(sc.next());
+        libros.setNombre(sc.nextLine());
         System.out.println("Digite el Codigo del libro: ");
         libros.setCodigo(sc.next());
         System.out.println("Digite Numero de paginas  del libro: ");
@@ -26,11 +26,11 @@ public class Main {
         System.out.println("Digite el autor del libro: ");
         libros.setAutor(sc.next());
 
-        System.out.println(libros.getNombre());
-        System.out.println(libros.getCodigo());
-        System.out.println(libros.getPaginas());
-        System.out.println(libros.getEjemplares());
-        System.out.println(libros.getAutor());
+        System.out.println("Nombre del libro "+libros.getNombre());
+        System.out.println("Codigo del libro "+libros.getCodigo());
+        System.out.println("Numero de Paginas "+libros.getPaginas());
+        System.out.println("Numero de ejemplares "+libros.getEjemplares());
+        System.out.println("Autor "+libros.getAutor());
 
     }
 }
